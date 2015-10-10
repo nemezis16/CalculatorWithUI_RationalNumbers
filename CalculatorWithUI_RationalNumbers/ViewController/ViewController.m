@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "CalculatorModel.h"
+#import "CalculatorController.h"
 
 @interface ViewController ()
-@property (strong,nonatomic) CalculatorModel* model;
+@property (strong,nonatomic) CalculatorController* model;
 @property (strong, nonatomic) IBOutlet UILabel *label;
 @property (nonatomic) BOOL isOperationClicked;
 @property (nonatomic) NSUInteger bracketsCounter;
@@ -36,15 +36,11 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
+#pragma mark Actions
 
 - (IBAction)onEqualClicked:(UIButton *)sender {
     if(self.bracketsCounter==0){
-        self.model=[CalculatorModel new];
+        self.model=[CalculatorController new];
         RationalNumbers* i=[self.model getValueFromString:self.label.text];
         if([i denominator]==1){
             self.label.text=[NSString stringWithFormat:@"%i",[i numerator]];
@@ -112,8 +108,6 @@
     }
 }
 
-
-
 - (IBAction)onClearClicked:(UIButton *)sender {
     self.bracketsCounter=0;
     [self.label setText:@"0"];
@@ -153,7 +147,7 @@
 }
 
 
-
+#pragma mark Suport only portrait orientation
 
 -(BOOL)shouldAutorotate
 {

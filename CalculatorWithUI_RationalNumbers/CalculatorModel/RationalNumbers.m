@@ -13,6 +13,8 @@
 
 @synthesize numerator,denominator;
 
+#pragma mark initializations
+
 -(instancetype)init{
     self=[super init];
     if(self){
@@ -44,10 +46,7 @@
     return  self;
 }
 
--(NSString *)description{
-    return [NSString stringWithFormat:@"%i/%i",self.numerator,self.denominator];
-}
-
+#pragma mark math operations
 
 +(RationalNumbers*)reducingFraction:(RationalNumbers*)Fraction{ 
     for(NSInteger i=Fraction.denominator;i>0;i--){
@@ -90,6 +89,13 @@
     RationalNumbers* resultFraction=[[RationalNumbers alloc]initWith:resultNumerator and:resultDenominator];
     
     return [RationalNumbers reducingFraction:resultFraction];
+}
+
+
+#pragma mark support operations
+
+-(NSString *)description{
+    return [NSString stringWithFormat:@"%i/%i",self.numerator,self.denominator];
 }
 
 -(id)copyWithZone:(NSZone *)zone{

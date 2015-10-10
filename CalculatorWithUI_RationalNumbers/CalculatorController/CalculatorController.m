@@ -6,11 +6,10 @@
 //  Copyright (c) 2015 Osadchuk. All rights reserved.
 //
 
-#import "CalculatorModel.h"
+#import "CalculatorController.h"
 
 
-@implementation CalculatorModel
-//@synthesize operands=_operands,operations=_operations;
+@implementation CalculatorController
 
 -(RationalNumbers*)getValueFromString:(NSString*)string{
     
@@ -51,7 +50,8 @@
             [operations addObject:character];
         }
         
-        else if(i==[string length]-1){ //&& ([character isEqualToString:[string substringFromIndex:[maxStrign length]]])){
+        else if(i==[string length]-1){
+            
             resultString=[string substringFromIndex:[maxStrign length]];
             
             [operands addObject:[self convertToRationalFrom:resultString]];
@@ -61,7 +61,6 @@
     RationalNumbers* result=[self operationsAccordingToPriorityWithOperands:operands Operations:operations];
    
     return result;
-    
 }
 
 -(RationalNumbers*)convertToRationalFrom:(NSString*)string{
@@ -80,7 +79,7 @@
             return rationalNumber;
         }
     }
-    return [[RationalNumbers alloc]initWith:0 and:0];;
+    return [[RationalNumbers alloc]initWith:0 and:0];
 }
 
 -(NSString*)resultInBarcketsFrom:(NSString*)string{
@@ -144,8 +143,6 @@
                 (i!=[operands count]-1)) {
                 
                 if ([operations[i] isEqualToString:@"+"]){
-                    NSLog(@"%@",[operands[i]description]);
-                    NSLog(@"%@",[operands[i+1]description]);
                     
                     RationalNumbers* val=[RationalNumbers add:operands[i] and:operands[i+1]];
                     [operands replaceObjectAtIndex:i withObject:val];

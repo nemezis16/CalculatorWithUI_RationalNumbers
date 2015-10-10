@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA85B77F1BC2F52F0035683B /* RationalNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = FA85B77E1BC2F52F0035683B /* RationalNumbers.m */; };
-		FA8BBBC01BBD6AD80023E1D6 /* CalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8BBBBF1BBD6AD80023E1D6 /* CalculatorModel.m */; };
+		FA8BBBC01BBD6AD80023E1D6 /* CalculatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8BBBBF1BBD6AD80023E1D6 /* CalculatorController.m */; };
 		FA8D31E61BBBD6F200A903B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D31E51BBBD6F200A903B4 /* UIKit.framework */; };
 		FA8D31E81BBBD6F200A903B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D31E71BBBD6F200A903B4 /* Foundation.framework */; };
 		FA8D31EA1BBBD6F200A903B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D31E91BBBD6F200A903B4 /* CoreGraphics.framework */; };
@@ -23,10 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA85B77D1BC2F52F0035683B /* RationalNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RationalNumbers.h; sourceTree = "<group>"; };
-		FA85B77E1BC2F52F0035683B /* RationalNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RationalNumbers.m; sourceTree = "<group>"; };
-		FA8BBBBE1BBD6AD80023E1D6 /* CalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorModel.h; sourceTree = "<group>"; };
-		FA8BBBBF1BBD6AD80023E1D6 /* CalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorModel.m; sourceTree = "<group>"; };
+		FA85B77D1BC2F52F0035683B /* RationalNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RationalNumbers.h; path = CalculatorModel/RationalNumbers.h; sourceTree = "<group>"; };
+		FA85B77E1BC2F52F0035683B /* RationalNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RationalNumbers.m; path = CalculatorModel/RationalNumbers.m; sourceTree = "<group>"; };
+		FA8BBBBE1BBD6AD80023E1D6 /* CalculatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorController.h; path = CalculatorController/CalculatorController.h; sourceTree = "<group>"; };
+		FA8BBBBF1BBD6AD80023E1D6 /* CalculatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalculatorController.m; path = CalculatorController/CalculatorController.m; sourceTree = "<group>"; };
 		FA8D31E21BBBD6F200A903B4 /* CalculatorWithUI_RationalNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorWithUI_RationalNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8D31E51BBBD6F200A903B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA8D31E71BBBD6F200A903B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,14 +35,14 @@
 		FA8D31EF1BBBD6F200A903B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA8D31F11BBBD6F200A903B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA8D31F31BBBD6F200A903B4 /* CalculatorWithUI_RationalNumbers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalculatorWithUI_RationalNumbers-Prefix.pch"; sourceTree = "<group>"; };
-		FA8D31F41BBBD6F200A903B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FA8D31F51BBBD6F200A903B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA8D31F41BBBD6F200A903B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		FA8D31F51BBBD6F200A903B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
 		FA8D31F71BBBD6F200A903B4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FA8D31F91BBBD6F200A903B4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FA8D31FB1BBBD6F200A903B4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FA8D31FE1BBBD6F200A903B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		FA8D32001BBBD6F200A903B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA8D32011BBBD6F200A903B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA8D32001BBBD6F200A903B4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ViewController/ViewController.h; sourceTree = "<group>"; };
+		FA8D32011BBBD6F200A903B4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ViewController/ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,22 +59,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA85B7801BC2F56F0035683B /* RationalNumbers */ = {
+		FA0394C31BC92D2D00BBF3A1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D32001BBBD6F200A903B4 /* ViewController.h */,
+				FA8D32011BBBD6F200A903B4 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		FA0394C41BC92D3D00BBF3A1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D31F41BBBD6F200A903B4 /* AppDelegate.h */,
+				FA8D31F51BBBD6F200A903B4 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FA85B7801BC2F56F0035683B /* CalculatorModel */ = {
 			isa = PBXGroup;
 			children = (
 				FA85B77D1BC2F52F0035683B /* RationalNumbers.h */,
 				FA85B77E1BC2F52F0035683B /* RationalNumbers.m */,
 			);
-			name = RationalNumbers;
+			name = CalculatorModel;
 			sourceTree = "<group>";
 		};
-		FA85B7811BC2F58E0035683B /* CalculatorModel */ = {
+		FA85B7811BC2F58E0035683B /* CalculatorController */ = {
 			isa = PBXGroup;
 			children = (
-				FA8BBBBE1BBD6AD80023E1D6 /* CalculatorModel.h */,
-				FA8BBBBF1BBD6AD80023E1D6 /* CalculatorModel.m */,
+				FA8BBBBE1BBD6AD80023E1D6 /* CalculatorController.h */,
+				FA8BBBBF1BBD6AD80023E1D6 /* CalculatorController.m */,
 			);
-			name = CalculatorModel;
+			name = CalculatorController;
 			sourceTree = "<group>";
 		};
 		FA8D31D91BBBD6F100A903B4 = {
@@ -107,13 +125,11 @@
 		FA8D31EB1BBBD6F200A903B4 /* CalculatorWithUI_RationalNumbers */ = {
 			isa = PBXGroup;
 			children = (
-				FA8D31F41BBBD6F200A903B4 /* AppDelegate.h */,
-				FA8D31F51BBBD6F200A903B4 /* AppDelegate.m */,
 				FA8D31FD1BBBD6F200A903B4 /* MainStoryboard.storyboard */,
-				FA8D32001BBBD6F200A903B4 /* ViewController.h */,
-				FA8D32011BBBD6F200A903B4 /* ViewController.m */,
-				FA85B7811BC2F58E0035683B /* CalculatorModel */,
-				FA85B7801BC2F56F0035683B /* RationalNumbers */,
+				FA0394C41BC92D3D00BBF3A1 /* AppDelegate */,
+				FA0394C31BC92D2D00BBF3A1 /* ViewController */,
+				FA85B7811BC2F58E0035683B /* CalculatorController */,
+				FA85B7801BC2F56F0035683B /* CalculatorModel */,
 				FA8D31EC1BBBD6F200A903B4 /* Supporting Files */,
 			);
 			path = CalculatorWithUI_RationalNumbers;
@@ -202,7 +218,7 @@
 				FA8D31F21BBBD6F200A903B4 /* main.m in Sources */,
 				FA8D31F61BBBD6F200A903B4 /* AppDelegate.m in Sources */,
 				FA8D32021BBBD6F200A903B4 /* ViewController.m in Sources */,
-				FA8BBBC01BBD6AD80023E1D6 /* CalculatorModel.m in Sources */,
+				FA8BBBC01BBD6AD80023E1D6 /* CalculatorController.m in Sources */,
 				FA85B77F1BC2F52F0035683B /* RationalNumbers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

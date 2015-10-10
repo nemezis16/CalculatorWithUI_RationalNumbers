@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RationalNumbers.h"
 
-@interface CalculatorModel : NSObject
+@interface CalculatorController : NSObject
 @property(nonatomic, strong) NSString* stringToParse;
 
 -(RationalNumbers*)getValueFromString:(NSString*)string;
